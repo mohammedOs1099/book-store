@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 
 const BooksList = ({
+  setSelectedBook,
   isLooding,
   books,
   error,
@@ -30,6 +31,7 @@ const BooksList = ({
           <button
             onClick={() => {
               dispatch(deleteBook(book.id));
+              setSelectedBook(null)
             }}
             disabled={!isLogedIn}
             type="button"

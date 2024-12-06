@@ -33,6 +33,7 @@ const BookContainer = () => {
             dispatch={dispatch}
             deleteBook={deleteBook}
             getOneBook={getOneBook}
+            setSelectedBook={setSelectedBook}
           />
         </div>
         <div className="col-md-6 col-lg-6 side-line">
